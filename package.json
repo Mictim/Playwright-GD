@@ -1,0 +1,27 @@
+{
+  "name": "playwright-gd",
+  "version": "1.0.0",
+  "description": "Repo for Playwright project",
+  "scripts": {
+    "compile": "tsc",
+    "runTest": "npx playwright test --config=dist/playwright.config.js",
+    "runTestDebug": "npx playwright test --config=dist/playwright.config.js --debug",
+    "html-report": "npx playwright show-report test-results/html-report",
+    "allure-report": "allure generate ./allure-results --clean && allure open ./allure-report"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mictim/Playwright-GD.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mictim/Playwright-GD/issues"
+  },
+  "homepage": "https://github.com/Mictim/Playwright-GD#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.17.1",
+    "allure-playwright": "^2.0.0-beta.14"
+  }
+}
