@@ -5,7 +5,7 @@ on:
   pull_request:
     branches: [ main, master ]
 jobs:
-  test:
+  Playwright Tests Execution:
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
@@ -40,3 +40,23 @@ jobs:
       with:
         name: allure-report
         path: allure-report/
+  publishTestResults:
+    name: "Publish Test Results to to testresults.marcusfelling.com"
+    needs: [Playwright Tests Execution]
+    runs-on: ubuntu-20.04
+    if: always()
+    steps:
+      - name: Download artifacts
+        uses: actions/download-artifact@v2
+        id: download
+
+      - name: Publish to GH Pages
+        if: always()
+        uses: peaceiris/actions-gh-pages@v3.7.3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ${{steps.download.outputs.download-path}}
+          keep_files: true
+          user_name: "github-actions[bot]"
+          user_email: "github-actions[bot]@users.noreply.github.com"
+
