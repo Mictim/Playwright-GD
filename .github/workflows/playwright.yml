@@ -41,7 +41,7 @@ jobs:
         name: allure-report
         path: allure-report/
   publishTestResults:
-    name: "Publish Test Results to to testresults.marcusfelling.com"
+    name: "Publish Test Results to to https://mictim.github.io/Playwright-GD/"
     needs: [playwrightTestsExecution]
     runs-on: ubuntu-20.04
     if: always()
