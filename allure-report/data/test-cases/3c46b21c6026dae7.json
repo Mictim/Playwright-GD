@@ -1,0 +1,306 @@
+{
+  "uid" : "3c46b21c6026dae7",
+  "name" : "Sign Up Test",
+  "fullName" : "Sign Up Test",
+  "historyId" : "webkit login.spec.ts Login Tests Sign Up Test",
+  "time" : {
+    "start" : 1641206204805,
+    "stop" : 1641206208107,
+    "duration" : 3302
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Before Hooks",
+      "time" : {
+        "start" : 1641206204805,
+        "stop" : 1641206204954,
+        "duration" : 149
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "browserContext.newPage",
+        "time" : {
+          "start" : 1641206204815,
+          "stop" : 1641206204953,
+          "duration" : 138
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "page.goto(/)",
+      "time" : {
+        "start" : 1641206204954,
+        "stop" : 1641206205649,
+        "duration" : 695
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Open Sign Up Page",
+      "time" : {
+        "start" : 1641206205650,
+        "stop" : 1641206206156,
+        "duration" : 506
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "locator.click(a:has-text('Sign up'))",
+        "time" : {
+          "start" : 1641206205651,
+          "stop" : 1641206206156,
+          "duration" : 505
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Enter new User Credentials",
+      "time" : {
+        "start" : 1641206206156,
+        "stop" : 1641206207806,
+        "duration" : 1650
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "locator.fill(input[placeholder=\"Username\"])",
+        "time" : {
+          "start" : 1641206206157,
+          "stop" : 1641206206496,
+          "duration" : 339
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "locator.fill(input[placeholder=\"Email\"])",
+        "time" : {
+          "start" : 1641206206497,
+          "stop" : 1641206206717,
+          "duration" : 220
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "locator.fill(input[placeholder=\"Password\"])",
+        "time" : {
+          "start" : 1641206206718,
+          "stop" : 1641206206757,
+          "duration" : 39
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "page.waitForResponse",
+        "time" : {
+          "start" : 1641206206757,
+          "stop" : 1641206206770,
+          "duration" : 13
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "locator.click(button:has-text(\"Sign\"))",
+        "time" : {
+          "start" : 1641206206759,
+          "stop" : 1641206207093,
+          "duration" : 334
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "response.json",
+        "time" : {
+          "start" : 1641206207761,
+          "stop" : 1641206207806,
+          "duration" : 45
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 6,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "expect.toHaveClass",
+      "time" : {
+        "start" : 1641206207806,
+        "stop" : 1641206207821,
+        "duration" : 15
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "After Hooks",
+      "time" : {
+        "start" : 1641206207821,
+        "stop" : 1641206208107,
+        "duration" : 286
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "browserContext.close",
+        "time" : {
+          "start" : 1641206208068,
+          "stop" : 1641206208105,
+          "duration" : 37
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "207110bffcfc3532",
+      "name" : "User Info",
+      "source" : "207110bffcfc3532.json",
+      "type" : "application/json",
+      "size" : 436
+    }, {
+      "uid" : "f2828d29cf8709c3",
+      "name" : "video",
+      "source" : "f2828d29cf8709c3.webm",
+      "type" : "video/webm",
+      "size" : 78025
+    }, {
+      "uid" : "e82730d3a95f9ae9",
+      "name" : "trace",
+      "source" : "e82730d3a95f9ae9.ZIP",
+      "type" : "application/zip",
+      "size" : 628341
+    }, {
+      "uid" : "a17547a9022ea41c",
+      "name" : "screenshot",
+      "source" : "a17547a9022ea41c.png",
+      "type" : "image/png",
+      "size" : 53329
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 15,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "webkit"
+  }, {
+    "name" : "suite",
+    "value" : "login.spec.ts"
+  }, {
+    "name" : "subSuite",
+    "value" : "Login Tests"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "3c46b21c6026dae7.json",
+  "parameterValues" : [ ]
+}

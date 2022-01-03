@@ -1,0 +1,291 @@
+{
+  "uid" : "698ab9cded3ca5b9",
+  "name" : "Sign In Test",
+  "fullName" : "Sign In Test",
+  "historyId" : "webkit login.spec.ts Login Tests Sign In Test",
+  "time" : {
+    "start" : 1641206193149,
+    "stop" : 1641206204804,
+    "duration" : 11655
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Before Hooks",
+      "time" : {
+        "start" : 1641206193150,
+        "stop" : 1641206195972,
+        "duration" : 2822
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "browserContext.newPage",
+        "time" : {
+          "start" : 1641206193683,
+          "stop" : 1641206195970,
+          "duration" : 2287
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "page.goto(/)",
+      "time" : {
+        "start" : 1641206195978,
+        "stop" : 1641206197555,
+        "duration" : 1577
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Open Sign In Page",
+      "time" : {
+        "start" : 1641206197557,
+        "stop" : 1641206203109,
+        "duration" : 5552
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "locator.click(a:has-text('Sign in'))",
+        "time" : {
+          "start" : 1641206197578,
+          "stop" : 1641206203109,
+          "duration" : 5531
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Login as mj_raid2002@gmail.com",
+      "time" : {
+        "start" : 1641206203110,
+        "stop" : 1641206204416,
+        "duration" : 1306
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "locator.fill(input[placeholder=\"Email\"])",
+        "time" : {
+          "start" : 1641206203111,
+          "stop" : 1641206203161,
+          "duration" : 50
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "locator.fill(input[placeholder=\"Password\"])",
+        "time" : {
+          "start" : 1641206203162,
+          "stop" : 1641206203386,
+          "duration" : 224
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "page.waitForResponse",
+        "time" : {
+          "start" : 1641206203387,
+          "stop" : 1641206203393,
+          "duration" : 6
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "locator.click(button:has-text(\"Sign\"))",
+        "time" : {
+          "start" : 1641206203389,
+          "stop" : 1641206203526,
+          "duration" : 137
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "response.json",
+        "time" : {
+          "start" : 1641206204385,
+          "stop" : 1641206204415,
+          "duration" : 30
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 5,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "expect.toHaveClass",
+      "time" : {
+        "start" : 1641206204417,
+        "stop" : 1641206204443,
+        "duration" : 26
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "After Hooks",
+      "time" : {
+        "start" : 1641206204444,
+        "stop" : 1641206204805,
+        "duration" : 361
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "browserContext.close",
+        "time" : {
+          "start" : 1641206204766,
+          "stop" : 1641206204801,
+          "duration" : 35
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "3669d34bdca0110b",
+      "name" : "User Info",
+      "source" : "3669d34bdca0110b.json",
+      "type" : "application/json",
+      "size" : 490
+    }, {
+      "uid" : "f24a858efb8ea365",
+      "name" : "video",
+      "source" : "f24a858efb8ea365.webm",
+      "type" : "video/webm",
+      "size" : 167994
+    }, {
+      "uid" : "73d5d73cc2d1fc15",
+      "name" : "trace",
+      "source" : "73d5d73cc2d1fc15.ZIP",
+      "type" : "application/zip",
+      "size" : 960520
+    }, {
+      "uid" : "dbc1a6bdf6d67bfa",
+      "name" : "screenshot",
+      "source" : "dbc1a6bdf6d67bfa.png",
+      "type" : "image/png",
+      "size" : 52294
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 14,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "webkit"
+  }, {
+    "name" : "suite",
+    "value" : "login.spec.ts"
+  }, {
+    "name" : "subSuite",
+    "value" : "Login Tests"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "698ab9cded3ca5b9.json",
+  "parameterValues" : [ ]
+}
