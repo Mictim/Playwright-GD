@@ -1,0 +1,122 @@
+{
+  "webkit login.spec.ts Login Tests Sign In Test" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "9c4271104c523b4c",
+      "reportUrl" : "https://Mictim.github.io/Playwright-GD/12//#testresult/9c4271104c523b4c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1641205037200,
+        "stop" : 1641205046035,
+        "duration" : 8835
+      }
+    } ]
+  },
+  "chromium login.spec.ts Login Tests Sign In Test" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "7c8f84f18e9dfd26",
+      "reportUrl" : "https://Mictim.github.io/Playwright-GD/12//#testresult/7c8f84f18e9dfd26",
+      "status" : "passed",
+      "time" : {
+        "start" : 1641205036937,
+        "stop" : 1641205040585,
+        "duration" : 3648
+      }
+    } ]
+  },
+  "firefox login.spec.ts Login Tests Sign Up Test" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "3a4a3f39d3deb76b",
+      "reportUrl" : "https://Mictim.github.io/Playwright-GD/12//#testresult/3a4a3f39d3deb76b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1641205045852,
+        "stop" : 1641205049312,
+        "duration" : 3460
+      }
+    } ]
+  },
+  "firefox login.spec.ts Login Tests Sign In Test" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d3a7c931ac22d5a",
+      "reportUrl" : "https://Mictim.github.io/Playwright-GD/12//#testresult/d3a7c931ac22d5a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1641205036979,
+        "stop" : 1641205045847,
+        "duration" : 8868
+      }
+    } ]
+  },
+  "chromium login.spec.ts Login Tests Sign Up Test" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "87fb01966f9b7033",
+      "reportUrl" : "https://Mictim.github.io/Playwright-GD/12//#testresult/87fb01966f9b7033",
+      "status" : "passed",
+      "time" : {
+        "start" : 1641205040586,
+        "stop" : 1641205043885,
+        "duration" : 3299
+      }
+    } ]
+  },
+  "webkit login.spec.ts Login Tests Sign Up Test" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c1321c77c980c905",
+      "reportUrl" : "https://Mictim.github.io/Playwright-GD/12//#testresult/c1321c77c980c905",
+      "status" : "passed",
+      "time" : {
+        "start" : 1641205046035,
+        "stop" : 1641205050830,
+        "duration" : 4795
+      }
+    } ]
+  }
+}

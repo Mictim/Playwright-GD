@@ -1,0 +1,61 @@
+[ {
+  "uid" : "d3a7c931ac22d5a",
+  "name" : "Sign In Test",
+  "time" : {
+    "start" : 1641205036979,
+    "stop" : 1641205045847,
+    "duration" : 8868
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9c4271104c523b4c",
+  "name" : "Sign In Test",
+  "time" : {
+    "start" : 1641205037200,
+    "stop" : 1641205046035,
+    "duration" : 8835
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c1321c77c980c905",
+  "name" : "Sign Up Test",
+  "time" : {
+    "start" : 1641205046035,
+    "stop" : 1641205050830,
+    "duration" : 4795
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3a4a3f39d3deb76b",
+  "name" : "Sign Up Test",
+  "time" : {
+    "start" : 1641205045852,
+    "stop" : 1641205049312,
+    "duration" : 3460
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7c8f84f18e9dfd26",
+  "name" : "Sign In Test",
+  "time" : {
+    "start" : 1641205036937,
+    "stop" : 1641205040585,
+    "duration" : 3648
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "87fb01966f9b7033",
+  "name" : "Sign Up Test",
+  "time" : {
+    "start" : 1641205040586,
+    "stop" : 1641205043885,
+    "duration" : 3299
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
