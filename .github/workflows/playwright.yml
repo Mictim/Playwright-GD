@@ -42,7 +42,7 @@ jobs:
         path: allure-report/
   publishTestResults:
     name: "Publish Test Results to to testresults.marcusfelling.com"
-    needs: [Playwright Tests Execution]
+    needs: [playwrightTestsExecution]
     runs-on: ubuntu-20.04
     if: always()
     steps:
