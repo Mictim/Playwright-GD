@@ -5,7 +5,6 @@ export class SignUpPage extends SignInPage {
     readonly page: Page;
     readonly usernameInput: Locator;
     readonly passwordInput: Locator;
-    readonly signButton: Locator;
 
     constructor(page: Page) {
         super(page);
