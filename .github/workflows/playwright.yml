@@ -21,10 +21,15 @@ jobs:
       run: npx playwright test --config=dist/playwright.config.js
     - name: Allure Report generation
       run: npm run allure-report
-    - uses: actions/upload-artifact@v2
+    - name: Publish Playwright Report
+      uses: actions/upload-artifact@v2
       if: always()
       with:
         name: playwright-test-results
         path: test-results/
+    - name: Publish Allure Report
+      uses: actions/upload-artifact@v2
+      if: always()
+      with:
         name: allure-report
         path: allure-report/
