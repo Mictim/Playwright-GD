@@ -6,12 +6,13 @@ const test = base.extend<{
     signUpSteps: SignUpSteps;
     signInSteps: SignInSteps;
 }>({
-    page: ({page}, use) => use(page),
+    page: async ({page}, use) => await use(page),
+
     signUpSteps: async({page}, use) => {
-        return use(new SignUpSteps(page));
+        await use(new SignUpSteps(page));
     },
     signInSteps: async({page}, use) => {
-        return use(new SignInSteps(page));
+        await use(new SignInSteps(page));
     }
 })
 

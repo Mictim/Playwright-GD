@@ -54,7 +54,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3.7.3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ${{steps.download.outputs.download-path}}/playwright-test-results
+          publish_dir: /home/runner/work/Playwright-GD/html-report
           keep_files: true
           user_name: "github-actions[bot]"
           user_email: "github-actions[bot]@users.noreply.github.com"
