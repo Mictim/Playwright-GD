@@ -49,8 +49,6 @@ jobs:
       - name: Download artifacts
         uses: actions/download-artifact@v2
         id: download
-        name: playwright-test-result
-
       - name: Publish to GH Pages
         if: always()
         uses: peaceiris/actions-gh-pages@v3.7.3
