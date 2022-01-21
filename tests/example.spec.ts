@@ -1,8 +1,9 @@
 import { test, expect } from "@playwright/test";
 
-test("basic test", async ({page}) => {
+test("basic test", async ({ page }) => {
   
-  await page.goto("/");
-
-  await expect(page.locator("a:has-text('Global Feed')")).toHaveClass(/active/);
+  await page.goto("https://maps.google.com");
+  await page.click("form button");
+  await page.click('button[aria-label="Your Location"]');
+  expect(page.locator("button[aria-label='Menu']")).toBeTruthy();
 });

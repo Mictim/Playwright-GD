@@ -11,5 +11,3 @@ import test from "../src/fixtures/LoginFixture";
 
     await expect(page.locator("a:has-text('Your Feed')")).toHaveClass(/active/);
   });
-
-
