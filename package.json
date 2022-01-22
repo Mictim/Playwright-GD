@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Repo for Playwright project",
   "scripts": {
-    "compile": "tsc",
     "runTest": "npx playwright test --config=playwright.config.ts",
     "runTestDebug": "npx playwright test --config=playwright.config.ts --debug",
     "html-report": "npx playwright show-report test-results/html-report",
@@ -22,6 +21,6 @@
   "homepage": "https://github.com/Mictim/Playwright-GD#readme",
   "devDependencies": {
     "@playwright/test": "^1.18.0",
-    "allure-playwright": "^2.0.0-beta.14"
+    "allure-playwright": "^2.0.0-beta.15"
   }
 }
