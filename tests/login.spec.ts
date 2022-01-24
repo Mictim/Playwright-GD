@@ -1,28 +1,47 @@
 import { expect } from "@playwright/test";
 import { User } from "../src/dto/User";
 import test from "../src/fixtures/LoginFixture";
+import { allure } from "allure-playwright";
 
-test.describe.parallel('Login Tests', async() => {
+test.describe.parallel('Login Tests', async () => {
+
+  test.beforeEach(async () => {
+    allure.link({ url: "https://https://angular.realworld.io", name: "Angular Example page" });
+    
+  })
+    
   const users: User[] = [User.useRandomUser(), User.useRandomUser(), User.useRandomUser()];
-    test("Sign In Test", async ({ page, signInSteps }) => {
-        const user = new User("", "mj_raid2002@gmail.com", "qazwsx123");
-        await page.goto("/");
-    
-        await signInSteps.openSignInPageStep();
-        await signInSteps.completeLoginStep(user);
-    
-        await expect(page.locator("a:has-text('Your Feed')")).toHaveClass(/active/);
-      });
+  test("Sign In Test", async ({ page, signInSteps }) => {
+    allure.tag("Login");
+    allure.severity("Critical");
+    allure.issue({
+      url: "https://github.com/Mictim/Playwright-GD/issues/2",
+      name: "Sign in Test"
+    });
+    const user = new User("", "mj_raid2002@gmail.com", "qazwsx123");
+    await page.goto("/");
 
-      users.forEach(user => {
-        test(`Sign Up Test for user: ${user.getUsername()}`, async ({page, signUpSteps}) => {
-          await page.goto("/");
-        
-          await signUpSteps.openSignUpPageStep();
-          await signUpSteps.completeNewUserCreationStep(user);
-      
-          await expect(page.locator("a:has-text('Your Feed')")).toHaveClass(/active/);
-        });
+    await signInSteps.openSignInPageStep();
+    await signInSteps.completeLoginStep(user);
+
+    await expect(page.locator("a:has-text('Your Feed')")).toHaveClass(/active/);
+  });
+
+  users.forEach(user => {
+    test(`Sign Up Test for user: ${user.getUsername()}`, async ({ page, signUpSteps }) => {
+      allure.tag("Login");
+      allure.tms({
+        url: "https://github.com/Mictim/Playwright-GD/issues/3",
+        name: "Sign Up Test"
       });
-      
+      allure.feature('Sign Up checks');
+      await page.goto("/");
+
+      await signUpSteps.openSignUpPageStep();
+      await signUpSteps.completeNewUserCreationStep(user);
+
+      await expect(page.locator("a:has-text('Your Feed')")).toHaveClass(/active/);
+    });
+  });
+
 })
