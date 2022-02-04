@@ -3,7 +3,7 @@ import { User } from "../src/dto/User";
 import test from "../src/fixtures/LoginFixture";
 import { allure } from "allure-playwright";
 
-test.describe.parallel('Login Tests', async () => {
+test.describe.parallel('Login Tests @login', async () => {
 
   test.beforeEach(async () => {
     allure.link({ url: "https://https://angular.realworld.io", name: "Angular Example page" });
@@ -18,6 +18,7 @@ test.describe.parallel('Login Tests', async () => {
       url: "https://github.com/Mictim/Playwright-GD/issues/2",
       name: "Sign in Test"
     });
+    allure.feature('Sign In check');
     const user = new User("", "mj_raid2002@gmail.com", "qazwsx123");
     await page.goto("/");
 
