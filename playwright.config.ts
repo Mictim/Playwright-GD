@@ -5,7 +5,9 @@ import { PlaywrightTestConfig, devices } from '@playwright/test';
  */
 const config: PlaywrightTestConfig = {
 
-  testMatch: 'tests/login.spec.ts',
+  testMatch: ['tests/login.spec.ts',
+    'tests/**.spec.ts'],
+  
 
   /* Maximum time one test can run for. */
   timeout: 30 * 1000,
@@ -33,9 +35,9 @@ const config: PlaywrightTestConfig = {
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: [
     ['list'],
+    //['allure-playwright'],
     ['html', {  outputFolder: 'test-results/html-report',
-                open: "on-failure" }],
-    ['allure-playwright'],
+                open: "on-failure" }]
   ],
 
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
