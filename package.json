@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/Mictim/Playwright-GD#readme",
   "devDependencies": {
-    "@playwright/test": "^1.21.1",
+    "@playwright/test": "^1.22.2",
     "allure-commandline": "^2.17.2",
     "allure-playwright": "^2.0.0-beta.16",
     "npm": "^8.3.2",
