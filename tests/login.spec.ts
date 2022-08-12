@@ -2,14 +2,15 @@ import { expect } from "@playwright/test";
 import { User } from "../src/dto/User";
 import test from "../src/fixtures/LoginFixture";
 import { allure } from "allure-playwright";
+import users from "../src/resources/newUsers.json";
+import { randomInt } from "crypto";
 
 test.describe.parallel('Login Tests @login', async () => {
 
   test.beforeEach(async () => {
-    allure.link({ url: "https://https://angular.realworld.io", name: "Angular Example page" });
+    allure.link({ url: "https://angular.realworld.io", name: "Angular Example page" });
   })
-    
-  const users: User[] = [User.useRandomUser(), User.useRandomUser(), User.useRandomUser()];
+
   test("Sign In Test", async ({ page, signInSteps }) => {
     allure.feature('Sign In check');
     allure.tag("Login");
@@ -19,7 +20,6 @@ test.describe.parallel('Login Tests @login', async () => {
       name: "Sign in Test"
     });
 
-    
     const user = new User("", "mj_raid2002@gmail.com", "qazwsx123");
     await page.goto("/");
 
@@ -29,8 +29,8 @@ test.describe.parallel('Login Tests @login', async () => {
     await expect(page.locator("a:has-text('Your Feed')")).toHaveClass(/active/);
   });
 
-  users.forEach(user => {
-    test(`Sign Up Test for user: ${user.getUsername()}`, async ({ page, signUpSteps }) => {
+  users.users.forEach(user => {
+    test.only(`Sign Up Test for new user: ${user.username}`, async ({ page, signUpSteps }) => {
       allure.feature('Sign Up checks');
       allure.tag("Login");
       allure.tms({
@@ -41,7 +41,8 @@ test.describe.parallel('Login Tests @login', async () => {
       await page.goto("/");
 
       await signUpSteps.openSignUpPageStep();
-      await signUpSteps.completeNewUserCreationStep(user);
+      const ran: number = randomInt(10000);
+      await signUpSteps.completeNewUserCreationStep(new User(`${user.username}${ran}`, user.email.replace("XXX", ran.toString()), user.password));
 
       await expect(page.locator("a:has-text('Your Feed')")).toHaveClass(/active/);
     });

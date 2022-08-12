@@ -28,4 +28,8 @@ export class User {
     public getEmail(): string {
         return this.email;
     }
+
+    public toString(): string {
+        return `username: ${this.username}, email: ${this.email}, password: '*******'`;
+    }
 }
