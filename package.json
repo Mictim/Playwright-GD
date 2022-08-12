@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Repo for Playwright project",
   "scripts": {
-    "runTest": "npx playwright test --config=playwright.config.ts",
+    "runTest": "npx playwright test --config=playwright.config.ts --grep @login",
     "runTestDebug": "npx playwright test --config=playwright.config.ts --debug",
     "html-report": "npx playwright show-report test-results/html-report",
     "generate-allure": "allure generate ./allure-results -c ./allure-report",

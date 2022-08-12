@@ -30,7 +30,7 @@ test.describe.parallel('Login Tests @login', async () => {
   });
 
   users.users.forEach(user => {
-    test.only(`Sign Up Test for new user: ${user.username}`, async ({ page, signUpSteps }) => {
+    test(`Sign Up Test for new user: ${user.username}`, async ({ page, signUpSteps }) => {
       allure.feature('Sign Up checks');
       allure.tag("Login");
       allure.tms({
