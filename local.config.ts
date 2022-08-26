@@ -25,16 +25,16 @@ const config: PlaywrightTestConfig = {
   forbidOnly: !!process.env.CI,
 
   /* Retry on CI only */
-  retries: process.env.CI ? 1 : 0,
+  retries: 0,
 
   /* Opt out of parallel tests on CI. */
-  workers: process.env.CI ? 4 : 2,
-
+  //workers: process.env.CI ? 2 : undefined,
+  workers : 3,
 
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: [
-    ['dot'],
-    ['allure-playwright', {  outputFolder: 'alluretest-results/html-report',
+    ['list'],
+    ['html', {  outputFolder: 'test-results/html-report',
                 open: "on-failure" }]
   ],
 
@@ -57,9 +57,9 @@ const config: PlaywrightTestConfig = {
     permissions: ['geolocation'],
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-    trace: 'on-first-retry',
+    trace: 'on',
     screenshot: 'on',
-    video: 'retain-on-failure',
+    video: 'on',
     
   },
 
